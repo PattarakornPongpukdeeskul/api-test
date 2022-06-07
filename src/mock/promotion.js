@@ -1,10 +1,8 @@
 export const promotion1 = (allProductPurchase) => {
-  console.log(allProductPurchase)
   if (allProductPurchase.some(e => e.sku === 'a') && allProductPurchase.some(e => e.sku === 'b')) {
     const productCounterA = [...allProductPurchase].filter(
       x => x.sku === "a"
     )[0].amount
-    console.log('productCounterA',productCounterA)
     const productCounterB = [...allProductPurchase].filter(
       x => x.sku === "b"
     )[0].amount
